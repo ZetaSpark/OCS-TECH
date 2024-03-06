@@ -8,3 +8,5 @@ Now, after getting input(userid, real-password) parse it into url body and Searc
 In POST route, firstly we will check if inputed userid and password is there in database or not, if not then through error.
 If input is present in database server, then render the request to one of 2 different ejs based on userid==admin_test or not.
 Then the corresponding ejs will show the output in table format.
+
+To check the working go to localhost:8080, after setting up the files and installing above packages.
