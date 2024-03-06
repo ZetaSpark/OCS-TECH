@@ -1,0 +1,31 @@
+<!-- views/userDetails.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>User Details</h1>
+    <table>
+        <tr>
+            <th>userid</th>
+            <th>password_hash</th>
+            <th>role</th>
+        </tr>
+        <tr>
+            <td><%= user.userid %></td>
+            <td><%= user.password_hash %></td>
+            <td><%= user.role %></td>
+        </tr>
+    </table>
+    <br>
+    <form action="/" method="POST">
+        <button>Fetch Again</button>
+    </form>
+</body>
+</html>
